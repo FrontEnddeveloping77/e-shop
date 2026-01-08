@@ -1,0 +1,156 @@
+.pd-wrapper {
+    max-width: 1300px;
+    margin: 40px auto;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 50px;
+}
+
+.pd-left {
+    background: #f7f8fa;
+    border-radius: 24px;
+    padding: 30px;
+}
+
+.pd-image-box {
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pd-image-box img {
+    height: 420px;
+    object-fit: contain;
+    transition: transform .4s ease;
+    border-radius: 12px;
+}
+
+.pd-image-box img:hover {
+    transform: scale(1.06);
+}
+
+.pd-badge {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    background: linear-gradient(135deg, #ff512f, #f09819);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.pd-right {
+    padding: 10px 0;
+}
+
+.pd-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.pd-rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.pd-rating span {
+    margin-left: 8px;
+    color: #777;
+}
+
+.pd-price-card {
+    background: linear-gradient(135deg, #fff1eb, #ace0f9);
+    padding: 20px;
+    border-radius: 18px;
+    margin-bottom: 20px;
+}
+
+.pd-price {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ff3d00;
+}
+
+.pd-old {
+    margin-left: 16px;
+    text-decoration: line-through;
+    color: #999;
+}
+
+.pd-description {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 26px;
+    color: #333;
+}
+
+.pd-actions {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.pd-cart {
+    flex: 1;
+    background: #ff3d00;
+    color: #fff;
+    padding: 16px;
+    border-radius: 16px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.pd-cart:hover {
+    background: #e63700;
+}
+
+.pd-like {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.pd-info {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    color: #444;
+}
+
+.pd-info div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .pd-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .pd-image-box img {
+        height: 300px;
+    }
+}

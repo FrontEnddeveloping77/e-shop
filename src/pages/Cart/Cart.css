@@ -1,0 +1,264 @@
+/* Cart.css */
+
+/* --- Umumiy konteyner --- */
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  /* padding-top: 20px; */
+}
+
+/* --- Bo'sh savatcha --- */
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 20px;
+  color: #555;
+}
+
+.empty-cart h2 {
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.empty-cart p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #777;
+}
+
+.go-shopping-btn {
+  margin-top: 30px;
+  padding: 12px 25px;
+  background-color: #1d4ed8;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.go-shopping-btn:hover {
+  background-color: #2563eb;
+}
+
+/* --- Savatcha sahifasi --- */
+.cart-page {
+  padding: 40px 20px;
+}
+
+.cart-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* --- Cart Content Layout --- */
+.cart-content {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* --- Mahsulotlar ro'yxati --- */
+.cart-items-list {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* --- Har bir mahsulot kartasi --- */
+.cart-item-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.03);
+  transition: 0.3s;
+}
+
+.cart-item-card:hover {
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.cart-item-main {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cart-item-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #f0f0f0;
+}
+
+.cart-item-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.item-price {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1d4ed8;
+}
+
+/* --- Cart Actions --- */
+.cart-item-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.quantity-controls button {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: #f9fafb;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+
+.quantity-controls button:hover:not(:disabled) {
+  background-color: #e5e7eb;
+}
+
+.quantity-controls span {
+  min-width: 24px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.item-total-price {
+  font-weight: 600;
+  color: #111827;
+  min-width: 80px;
+  text-align: right;
+}
+
+.remove-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #ef4444;
+  transition: 0.2s;
+}
+
+.remove-btn:hover {
+  color: #b91c1c;
+}
+
+/* --- Buyurtma xulosasi --- */
+.cart-summary {
+  flex: 0.7;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.03);
+  height: fit-content;
+}
+
+.cart-summary h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.summary-row.total {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.summary-row .free {
+  color: #10b981;
+  font-weight: 500;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 15px 0;
+}
+
+.checkout-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #1d4ed8;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.checkout-btn:hover {
+  background-color: #2563eb;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 1024px) {
+  .cart-content {
+    flex-direction: column;
+  }
+
+  .cart-summary {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .cart-item-main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .cart-item-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .quantity-controls button {
+    width: 32px;
+    height: 32px;
+  }
+}

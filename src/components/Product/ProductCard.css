@@ -1,0 +1,134 @@
+/* CARD */
+.p-card {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    height: 100%;
+    cursor: pointer;
+}
+
+.p-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.12);
+}
+
+/* IMAGE */
+.p-image-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-image-wrapper img {
+    width: 90%;
+    height: 90%;
+    border-radius: 12px;
+    object-fit: cover;
+    /* display: block; */
+}
+
+/* WISHLIST */
+.p-wishlist-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.95);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.p-wishlist-btn:hover,
+.p-wishlist-btn.active {
+    background: #ffecec;
+}
+
+.p-wishlist-btn svg {
+    color: #ef4444;
+}
+
+.p-wishlist-btn.active svg {
+    filter: drop-shadow(0 0 5px rgba(255, 77, 77, 0.3));
+    /* Ozgina porlash effekti */
+}
+
+/* BADGE */
+.p-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* DETAILS */
+.p-details {
+    padding: 14px;
+}
+
+.p-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+    height: 42px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    color: #111827;
+}
+
+/* PRICE */
+.p-price-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.p-prices {
+    display: flex;
+    flex-direction: column;
+}
+
+.current-price {
+    font-size: 17px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.old-price {
+    font-size: 13px;
+    color: #9ca3af;
+    text-decoration: line-through;
+}
+
+/* CART */
+.p-add-cart {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    border: none;
+    background: #111827;
+    color: #ffffff;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.p-add-cart:hover {
+    background: #2563eb;
+}

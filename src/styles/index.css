@@ -1,0 +1,41 @@
+/* ===== VARIABLES ===== */
+:root {
+  --primary: #7000ff;
+  --dark: #1f1f1f;
+  --gray: #f3f3f3;
+  --border: #e5e5e5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #fcfcfc;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Yon tomonlardan joy tashlaydigan asosiy klass */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4%;
+  /* Mana shu yon tomonlardan joy tashlaydi */
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 25px;
+}
