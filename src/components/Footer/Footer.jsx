@@ -38,7 +38,7 @@ const Footer = () => {
                             </div>
                             <div className="contact-item">
                                 <MapPin size={18} />
-                                <span>Toshkent, O'zbekiston</span>
+                                <span>O'zbekiston</span>
                             </div>
                         </div>
                     </div>

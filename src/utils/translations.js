@@ -6,7 +6,7 @@ export const translations = {
             profil: "Profil",
             wishlist: "Saralanganlar",
             cart: "Savatcha",
-            phone: "+998 71 200 70 07",
+            phone: "+998 00 000 00 00",
             categories: {
                 electronics: "Elektronika",
                 clothing: "Kiyim-kechak",
